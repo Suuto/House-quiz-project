@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link  rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <!--Menu-->
+  <div class="menubar">
+  <p class="header__menu">
+    <span style="font-size:25px;cursor:pointer;font-family:'Prompt', sans-serif;" onclick="openNav()">Menu</span>
+    <span class="material-icons">
+          list
+    </span>
+  </p>
+</div>
+<div>
+  <div id="menu_list" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Quiz</a>
+      <a href="Photogallery.html">Gallery</a>
+      <a href="Game.html">Game</a>
+      <a href="aboutus.html">About us</a>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("menu_list").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("menu_list").style.height = "0%";
+    }
+    </script>
+  </div>
+
+  <div class="about-section">
+    <div class="inner-container">
+      <center><h1 style="font-family: Bree Serif;font-size:300%;color:ed6f6f">About us</h1>
+      <p class="text">
+        Have you ever heard “Home is the best place”? However, there are also some people who don’t like their own house and choose to go outside. This is the problem we want to fix. We want this phase to become true to everyone. Due to this, we create this website with a main purpose of helping people to find what house suits their personality the most. We have a quiz for you to try, which this quiz will help you find your answer, we also provide you a gallery that contains houses with different styles. We really help all the users to have their own secure, comfortable house to live and make your house become a real best place for you.
+      </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

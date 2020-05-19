@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>House Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!--Menu-->
+  <div class="menubar">
+  <p class="header__menu">
+    <span style="font-size:25px;cursor:pointer;font-family:'Prompt', sans-serif;" onclick="openNav()">Menu</span>
+    <span class="material-icons">
+          list
+    </span>
+  </p>
+</div>
+<div>
+  <div id="menu_list" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Quiz</a>
+      <a href="Photogallery.html">Gallery</a>
+      <a href="Game.html">Game</a>
+      <a href="aboutus.html">About us</a>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("menu_list").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("menu_list").style.height = "0%";
+    }
+    </script>
+  </div>
+
+    <div class="quiz-container">
+        <div class="title">House Quiz</div>
+        <p> This test is a personality test. Please choose the answer that you preferred to have the most among three choices.<p>
+        <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <div class="result">
+    </div>
+    <script src=questions.js></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
